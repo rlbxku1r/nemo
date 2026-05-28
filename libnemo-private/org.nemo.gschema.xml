@@ -79,6 +79,11 @@
   </schema>
 
   <schema id="org.nemo.preferences" path="/org/nemo/preferences/" gettext-domain="nemo">
+    <key name="open-uri-in-new-tab" type="b">
+      <default>false</default>
+      <summary>Open externally opened directory in a new tab</summary>
+      <description>Open externally opened directory URI in a new tab instead of a new window.</description>
+    </key>
     <key name="tabs-open-position" enum="org.nemo.TabPosition">
       <aliases>
 	<alias value='after_current_tab' target='after-current-tab'/>

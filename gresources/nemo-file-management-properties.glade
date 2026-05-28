@@ -1192,6 +1192,22 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                                         <property name="orientation">vertical</property>
                                         <property name="spacing">6</property>
                                         <child>
+                                          <object class="GtkCheckButton" id="open_uri_in_new_tab_checkbutton">
+                                            <property name="label" translatable="yes">Open externally opened directory in a new tab</property>
+                                            <property name="visible">True</property>
+                                            <property name="can-focus">True</property>
+                                            <property name="receives-default">False</property>
+                                            <property name="use-underline">True</property>
+                                            <property name="xalign">0</property>
+                                            <property name="draw-indicator">True</property>
+                                          </object>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">0</property>
+                                          </packing>
+                                        </child>
+                                        <child>
                                           <object class="GtkCheckButton" id="quick_renames_with_pause_in_between">
                                             <property name="label" translatable="yes">Click on a file's name twice to rename it</property>
                                             <property name="visible">True</property>
@@ -1204,7 +1220,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                                           <packing>
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
-                                            <property name="position">0</property>
+                                            <property name="position">1</property>
                                           </packing>
                                         </child>
                                         <child>
@@ -1220,7 +1236,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                                           <packing>
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
-                                            <property name="position">1</property>
+                                            <property name="position">2</property>
                                           </packing>
                                         </child>
                                         <child>
@@ -1236,7 +1252,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                                           <packing>
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
-                                            <property name="position">2</property>
+                                            <property name="position">3</property>
                                           </packing>
                                         </child>
                                         <child>
@@ -1253,7 +1269,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
                                             <property name="padding">3</property>
-                                            <property name="position">3</property>
+                                            <property name="position">4</property>
                                           </packing>
                                         </child>
                                         <child>
@@ -1270,7 +1286,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
                                             <property name="padding">3</property>
-                                            <property name="position">4</property>
+                                            <property name="position">5</property>
                                           </packing>
                                         </child>
                                         <child>
@@ -1286,7 +1302,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                                           <packing>
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
-                                            <property name="position">5</property>
+                                            <property name="position">6</property>
                                           </packing>
                                         </child>
                                       </object>

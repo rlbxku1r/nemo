@@ -77,6 +77,9 @@ typedef enum
 /* Single/Double click preference  */
 #define NEMO_PREFERENCES_CLICK_POLICY			"click-policy"
 
+/* Open externally opened directory in a new tab */
+#define NEMO_PREFERENCES_OPEN_URI_IN_NEW_TAB "open-uri-in-new-tab"
+
 /* Quick renames with two single clicks and pause in-between*/
 #define NEMO_PREFERENCES_CLICK_TO_RENAME "quick-renames-with-pause-in-between"
 
