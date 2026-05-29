@@ -1053,7 +1053,6 @@ post_registration:
 		used_default_location = TRUE;
 	} else if (g_settings_get_boolean(nemo_preferences, NEMO_PREFERENCES_OPEN_URI_IN_NEW_TAB)) {
 		/* Open in a new tab of the existing window when one or more URIs are provided. */
-		// FIXME: nemo_preferences may not yet initialized at this point...
 		open_in_existing_window = TRUE;
 	}
 

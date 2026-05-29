@@ -532,6 +532,9 @@ nemo_application_init (NemoApplication *application)
 				  G_CALLBACK (nemo_application_quit), application);
 
 	g_object_unref (action);
+
+	/* initialize preferences and create the global GSettings objects */
+	nemo_global_preferences_init ();
 }
 
 void
@@ -592,9 +595,6 @@ nemo_application_startup (GApplication *app)
 
 	/* create an undo manager */
 	self->undo_manager = nemo_undo_manager_new ();
-
-	/* initialize preferences and create the global GSettings objects */
-	nemo_global_preferences_init ();
 
     /* Run desktop- or main- specific things */
     NEMO_APPLICATION_CLASS (G_OBJECT_GET_CLASS (self))->continue_startup (self);
